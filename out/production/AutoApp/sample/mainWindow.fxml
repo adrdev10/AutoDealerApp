@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="501.0" prefWidth="581.0" vgap="10" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <Label style="-fx-font-size: 20pt" text="AutoApp">
+        <font>
+            <Font size="24.0" />
+        </font>
+        <GridPane.margin>
+            <Insets bottom="40.0" />
+        </GridPane.margin></Label>
+   <ImageView fitHeight="100.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+      <image>
+         <Image url="@car1.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <image>
+         <Image url="@car2.jpg" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+      <image>
+         <Image url="@car3.jpg" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <image>
+         <Image url="@car4.jpg" />
+      </image>
+   </ImageView>
+   <Label text="S50" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <Label text="S60" GridPane.rowIndex="3" />
+   <Label text="S70" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   <Label text="S40" GridPane.rowIndex="1" />
+   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="5">
+      <children>
+         <Button fx:id="Button1" onAction="#ButtonPressed" mnemonicParsing="false" text="S4 - $27700" />
+         <Button fx:id="Button2" mnemonicParsing="false" onAction="#ButtonPressed" text="S50 - $32500"/>
+         <Button fx:id="Button3" mnemonicParsing="false" onAction="#ButtonPressed" text="S60 - $36000"/>
+         <Button fx:id="Button4" mnemonicParsing="false" onAction="#ButtonPressed" text="S70 - $44000"/>
+      </children>
+   </VBox>
+    <columnConstraints>
+        <ColumnConstraints maxWidth="481.0" minWidth="267.0" prefWidth="278.0" />
+        <ColumnConstraints maxWidth="265.0" minWidth="51.0" prefWidth="254.0" />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="13.0" />
+        <RowConstraints />
+        <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+</GridPane>
